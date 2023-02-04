@@ -46,15 +46,38 @@
 
 // Console.ReadLine();
 
-/*--------------------------------------------*/
+// /*--------------------------------------------*/
+
+// Console.Clear();
+// Console.WriteLine("Task 23");
+// Console.WriteLine("------");
+
+// Console.Write("Enter number:");
+// int num2 = Convert.ToInt32(Console.ReadLine());
+
+// for (int i = 1; i <= num2; i++) Console.Write($"{Math.Pow(i, 3)}  ");
+
+// Console.ReadLine();
+
+// /*--------------------------------------------*/
 
 Console.Clear();
-Console.WriteLine("Task 23");
+Console.WriteLine("Task Add");
 Console.WriteLine("------");
 
-Console.Write("Enter number:");
-int num2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Enter N:");
+int num3 = Convert.ToInt32(Console.ReadLine());
+int result = 0;
 
-for (int i = 1; i <= num2; i++) Console.Write($"{Math.Pow(i, 3)}  ");
+while(num3 < 3 || num3 > 1000){
+    Console.Write("Enter N:");
+    num3 = Convert.ToInt32(Console.ReadLine());
+}
 
+Console.WriteLine(num3);
+for (int i = num3-2; i <= num3; i++){
+    Console.Write($"{i}  ");
+    result += i;
+}
+Console.WriteLine($"Result: {result}");
 Console.ReadLine();
